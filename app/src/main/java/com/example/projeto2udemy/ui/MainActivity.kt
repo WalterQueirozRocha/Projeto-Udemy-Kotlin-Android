@@ -10,6 +10,7 @@ import com.example.projeto2udemy.R
 import com.example.projeto2udemy.SharedPreferences
 import com.example.projeto2udemy.data.Mock
 import com.example.projeto2udemy.databinding.ActivityMainBinding
+import java.util.Locale
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.userName.text = "Olá, $name!"
     }
     private fun handleNextPhrase(){
-        val phrase = Mock().getPhrase(categoryId)
+        val phrase = Mock().getPhrase(categoryId, Locale.getDefault().language)
         binding.textCenter.text = phrase
     }
 

@@ -12,4 +12,10 @@ class MotivationConstants {
         const val MOON = 3
     }
 
+    object LANGUAGE {
+        const val PT = "pt"
+        const val ENG = "en"
+        const val FR = "fr"
+    }
+
 }
